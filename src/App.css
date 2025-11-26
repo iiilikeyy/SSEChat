@@ -1,0 +1,100 @@
+.App {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  /* Adjust container padding */
+  .chat-container {
+    padding: 12px !important;
+  }
+  
+  /* Adjust header font size */
+  .chat-header h1 {
+    fontSize: 24px !important;
+  }
+  
+  .chat-header p {
+    fontSize: 12px !important;
+  }
+  
+  /* Adjust input area */
+  .chat-input-area {
+    gap: 8px !important;
+    padding: 8px !important;
+  }
+  
+  /* Adjust button size */
+  .chat-button {
+    height: 36px !important;
+    fontSize: 13px !important;
+  }
+  
+  /* Adjust status text */
+  .chat-status {
+    fontSize: 12px !important;
+  }
+  
+  /* Adjust message bubble */
+  .chat-message-bubble {
+    max-width: 85% !important;
+  }
+}
+
+/* Dark mode support (optional) */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+  }
+  
+  .chat-container {
+    background-color: #1a1a1a !important;
+  }
+  
+  .chat-messages {
+    background-color: #2a2a2a !important;
+  }
+  
+  .chat-input-area {
+    background-color: #2a2a2a !important;
+  }
+  
+  .chat-empty-state {
+    color: #999 !important;
+  }
+}
+
